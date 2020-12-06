@@ -11,7 +11,7 @@ module.exports = merge(common, {
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    port: '9000'
+    port: '9000',
   },
   plugins: [
     new FriendlyErrorsWebpackPlugin(),
@@ -19,12 +19,12 @@ module.exports = merge(common, {
       {
         host: 'localhost',
         port: '9100',
-        proxy: { target: 'http://localhost:9000' }
+        proxy: { target: 'http://localhost:9000' },
       },
       { reload: false }
     ),
     new WebpackNotifierPlugin({
-      title: 'VanillaJS Starter Project'
-    })
-  ]
+      title: 'VanillaJS Starter Project',
+    }),
+  ],
 });

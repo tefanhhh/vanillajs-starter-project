@@ -16,6 +16,7 @@
     "sourceType": "module"
   },
   "rules": {
-      "comma-style": ["error", "last"]
+    "comma-style": ["error", "last"],
+    "comma-dangle": ["error", "always-multiline"]
   }
 }

@@ -1,3 +1,6 @@
 # Ignore artifacts:
 dist/*.js
 *.html
+webpack.common.js
+webpack.dev.js
+webpack.prod.js

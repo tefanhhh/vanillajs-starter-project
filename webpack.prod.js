@@ -8,8 +8,8 @@ module.exports = merge(common, {
   devtool: 'source-map',
   plugins: [
     new CleanWebpackPlugin({
-      cleanStaleWebpackAssets: false
-    })
+      cleanStaleWebpackAssets: false,
+    }),
   ],
   optimization: {
     moduleIds: 'deterministic',
@@ -18,17 +18,17 @@ module.exports = merge(common, {
         vendor: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendors',
-          chunks: 'all'
+          chunks: 'all',
         },
         styles: {
           test: /\.css$/,
           name: 'styles',
           chunks: 'all',
-          enforce: true
-        }
-      }
+          enforce: true,
+        },
+      },
     },
     runtimeChunk: 'single',
-    minimizer: ['...', new CssMinimizerPlugin()]
-  }
+    minimizer: ['...', new CssMinimizerPlugin()],
+  },
 });
