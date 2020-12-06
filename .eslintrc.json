@@ -1,15 +1,19 @@
 {
-    "env": {
-        "browser": true,
-        "es6": true,
-        "commonjs": true,
-        "node": true
-    },
-    "extends": ["eslint:recommended", "prettier", "prettier/babel", "prettier/prettier"],
-    "parserOptions": {
-        "ecmaVersion": 6,
-        "sourceType": "module"
-    },
-    "rules": {
-    }
+  "env": {
+    "browser": true,
+    "es6": true,
+    "commonjs": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "prettier",
+    "prettier/babel",
+    "prettier/prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {}
 }

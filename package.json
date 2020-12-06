@@ -5,9 +5,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --watch",
+    "watch": "webpack --watch --config webpack.dev.js",
     "start": "webpack serve --config webpack.dev.js",
-    "server": "node server.js",
     "build": "webpack --config webpack.prod.js"
   },
   "keywords": [],
@@ -17,11 +16,14 @@
     "@babel/core": "^7.12.9",
     "@babel/preset-env": "^7.12.7",
     "babel-loader": "^8.2.2",
+    "browser-sync": "^2.26.13",
+    "browser-sync-webpack-plugin": "^2.2.2",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.1",
     "css-minimizer-webpack-plugin": "^1.1.5",
     "eslint": "^7.15.0",
     "eslint-config-prettier": "^7.0.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
     "html-webpack-plugin": "^4.5.0",
     "husky": "^4.3.4",
     "lint-staged": "^10.5.3",
@@ -32,7 +34,8 @@
     "webpack": "^5.9.0",
     "webpack-cli": "^4.2.0",
     "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^5.4.0"
+    "webpack-merge": "^5.4.0",
+    "webpack-notifier": "^1.11.0"
   },
   "dependencies": {
     "lodash": "^4.17.20"
